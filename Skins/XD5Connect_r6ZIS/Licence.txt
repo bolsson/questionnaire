@@ -1,0 +1,29 @@
+XD Design (trading as DNNSkins) - http://www.xd.com.au
+Copyright (c) 1996-2009 by XD Design Inc
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+All original files have been provided as part of this download and all rights and copyrights belong to the original author.
+
+DNNSkins.com has been provided as a community website for the DotNetNuke Community to ensure that free skins provided are current and patched for changes that occur as the application changes.
+
+If you have a free skin and would like to have it displayed here, please visit our website http://www.dnnskins.com for further information.
+
+Thank you from 
+
+Nina Meiers
+nina@xd.com.au
+
+http://www.dnnskins.com
+http://www.xd.com.au
+http://www.dotnetnuke.net.au
+http://www.modulereviews.com
+http://www.skincovered.com
+http://www.catalooksupport.com
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions 
+of the Software.
+
+All credits for free skins shall remain in the source as provided in this upload and license to use this skin is only granted upon acceptance of this condition.
+
+

@@ -1,0 +1,18 @@
+This package has been tested on the DNN 5.0 24th December release.  We have hand installed each skin we have upgraded to test the process.  
+
+Known issues:
+There are no specific known issues but if you find any you can report to our forums on http://www.dnnskins.com/forums.aspx
+
+Thank you from 
+
+Nina Meiers
+
+nina@xd.com.au
+
+http://www.dnnskins.com
+http://www.xd.com.au
+http://www.dotnetnuke.net.au
+http://www.modulereviews.com
+http://www.skincovered.com
+http://www.catalooksupport.com
+

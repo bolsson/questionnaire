@@ -1,0 +1,6 @@
+1. IIS
+2. .net framework
+3. sql server (.net is auto installed)
+4. sql SP1
+5. VS 2008 + SP (.net 3.5), Silverlight 3
+6. Expression Studio

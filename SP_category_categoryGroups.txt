@@ -1,0 +1,164 @@
+ALTER PROCEDURE dbo.[YourCompany_Questionnaire_Delete]
+(
+@PortalID int,
+@ModuleID int,
+@QuestionID int
+)
+AS
+DELETE FROM YourCompany_Questionnaire
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND QuestionID = @QuestionID)
+RETURN
+
+Create PROCEDURE dbo.[YourCompany_Qcategory_Delete]
+(
+@PortalID int,
+@ModuleID int,
+@priority int
+)
+AS
+DELETE FROM YourCompany_Qcategory
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND priority= @priority)
+RETURN
+
+Create PROCEDURE dbo.[YourCompany_QcategoryGroups_Delete]
+(
+@PortalID int,
+@ModuleID int,
+@Grouping int
+)
+AS
+DELETE FROM YourCompany_QcategoryGroups
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND Grouping= @Grouping)
+RETURN
+
+
+------------------------------
+
+ALTER PROCEDURE dbo.[YourCompany_Questionnaire_GetAll]
+(
+@PortalID int,
+@ModuleID int
+)
+AS
+SELECT PortalID, ModuleID, QuestionID, question, ShowQuestion, category, Xfactor
+FROM YourCompany_Questionnaire
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID)
+ORDER BY QuestionID ASC
+RETURN
+
+create PROCEDURE dbo.[YourCompany_Qcategory_GetAll]
+(
+@PortalID int,
+@ModuleID int
+)
+AS
+SELECT PortalID, ModuleID, category, categoryOpposed, priority
+FROM YourCompany_Qcategory
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID)
+ORDER BY category ASC
+RETURN
+
+create PROCEDURE dbo.[YourCompany_QcategoryGroups_GetAll]
+(
+@PortalID int,
+@ModuleID int
+)
+AS
+SELECT PortalID, ModuleID, Grouping, Groupname, GroupDescription
+FROM YourCompany_QcategoryGroups
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID)
+ORDER BY Grouping ASC
+RETURN
+
+--------------------------------------------
+
+ALTER PROCEDURE dbo.[YourCompany_Questionnaire_Insert]
+(
+@PortalID int,
+@ModuleID int,
+@question nvarchar(250),
+@ShowQuestion bit,
+@Category nvarchar(25),
+@Xfactor int
+)
+AS
+INSERT INTO YourCompany_Questionnaire
+(PortalID,ModuleID,question,ShowQuestion,category,Xfactor)
+VALUES (@PortalID,@ModuleID,@question,@ShowQuestion,@Category,@Xfactor)
+RETURN
+
+create PROCEDURE dbo.[YourCompany_Qcategory_Insert]
+(
+@PortalID int,
+@ModuleID int,
+@category nvarchar(50),
+@categoryOpposed nvarchar(50),
+@priority int
+)
+AS
+INSERT INTO YourCompany_Qcategory
+(PortalID,ModuleID,category,categoryOpposed,priority)
+VALUES (@PortalID,@ModuleID,@category,@categoryOpposed,@priority)
+RETURN
+
+create PROCEDURE dbo.[YourCompany_QcategoryGroups_Insert]
+(
+@PortalID int,
+@ModuleID int,
+@grouping nvarchar(50),
+@groupName nvarchar(50),
+@GroupDescription nvarchar(2500)
+)
+AS
+INSERT INTO YourCompany_QcategoryGroups
+(PortalID,ModuleID,Grouping,GroupName,GroupDescription)
+VALUES (@PortalID,@ModuleID,@Grouping,@GroupName,@GroupDescription)
+RETURN
+
+------------------------------------------------
+
+ALTER PROCEDURE dbo.[YourCompany_Questionnaire_Update]
+(
+@PortalID int,
+@ModuleID int,
+@QuestionID int,
+@question nvarchar(250),
+@ShowQuestion bit,
+@category nvarchar(25),
+@Xfactor int
+)
+AS
+UPDATE YourCompany_Questionnaire
+SET PortalID = @PortalID, ModuleID = @ModuleID, question = @question, ShowQuestion = @ShowQuestion, category = @category, Xfactor = @Xfactor
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND QuestionID = @QuestionID)
+RETURN
+
+
+create PROCEDURE dbo.[YourCompany_Qcategory_Update]
+(
+@PortalID int,
+@ModuleID int,
+@category nvarchar(50),
+@categoryOpposed nvarchar(50),
+@priority int
+)
+AS
+UPDATE YourCompany_Qcategory
+SET PortalID = @PortalID, ModuleID = @ModuleID, category = @category, categoryOpposed = @categoryOpposed, priority = @priority
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND priority = @priority)
+RETURN
+
+
+create PROCEDURE dbo.[YourCompany_QcategoryGroups_Update]
+(
+@PortalID int,
+@ModuleID int,
+@grouping nvarchar(50),
+@groupName nvarchar(50),
+@GroupDescription nvarchar(2500)
+)
+AS
+UPDATE YourCompany_QcategoryGroups
+SET PortalID = @PortalID, ModuleID = @ModuleID, grouping = @grouping, groupName = @groupName, GroupDescription = @GroupDescription
+WHERE (PortalID = @PortalID AND ModuleID = @ModuleID AND grouping = @grouping)
+RETURN
